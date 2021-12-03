@@ -1,0 +1,123 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  background-color: hsl(0, 0%, 95%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+h1 {
+  color: hsl(0, 0%, 95%);
+  text-transform: uppercase;
+}
+p {
+  color: hsla(0, 0%, 100%, 0.75);
+  line-height: 1.6em;
+}
+.card {
+  width: 70%;
+  height: 65vh;
+  /* margin: auto; */
+  display: flex;
+  flex-direction: row;
+  border-radius: 8px;
+}
+
+.one,
+.two,
+.three {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+button {
+  padding: 10px 27px;
+  border: 2px solid hsl(0, 0%, 95%);
+  border-radius: 50px;
+  text-transform: capitalize;
+  margin-top: 30px;
+  transition: 0.3s ease-in-out;
+}
+.one button:hover,
+.two button:hover,
+.three button:hover {
+  background-color: transparent;
+  color: hsl(0, 0%, 95%);
+}
+
+.one {
+  background-color: hsl(31, 77%, 52%);
+  border-bottom-left-radius: 8px;
+  border-top-left-radius: 8px;
+}
+.one button {
+  color: hsl(31, 77%, 52%);
+}
+.two button {
+  color: hsl(184, 100%, 22%);
+}
+.three button {
+  color: hsl(179, 100%, 13%);
+}
+.icon {
+  height: 85%;
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+.two {
+  background-color: hsl(184, 100%, 22%);
+}
+.three {
+  background-color: hsl(179, 100%, 13%);
+  border-bottom-right-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+@media only screen and (max-width: 800px) {
+  .card {
+    width: 50%;
+    height: 95vh;
+    display: flex;
+    flex-direction: column;
+  }
+  h1 {
+    font-size: 20px;
+  }
+  button {
+    padding: 5px 10px;
+    margin-top: 10px;
+  }
+  .one {
+    border-bottom-left-radius: 0px;
+    border-top-left-radius: 0px;
+  }
+  .three {
+    border-bottom-right-radius: 0px;
+    border-top-right-radius: 0px;
+  }
+
+  .one,
+  .two,
+  .three {
+    padding: 20px;
+  }
+
+  p {
+    color: hsla(0, 0%, 100%, 0.75);
+    line-height: 1.2em;
+    font-size: 12px;
+  }
+}
